@@ -1,0 +1,11 @@
+.nav{
+    display: flex;
+    background-color: plum;
+   padding: 20px;
+  
+}
+
+.cart{
+    margin-left: 30px;
+    margin-top: 5px;
+}
