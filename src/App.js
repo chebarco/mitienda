@@ -4,6 +4,7 @@ import ItemListContainer from './componentes/itemlistcontainer/ItemListContainer
 import ItemDetailContainer from './componentes/itemdetailcontainer/ItemDetailContainer'
 import CartContextProvider from "./context/CartContext"
 import Cart from "./componentes/cart/Cart"
+import Footer from './componentes/Footer/Footer'
 
 
 
@@ -37,7 +38,8 @@ function App() {
                         />   
                     
                         
-                    </Routes>           
+                    </Routes> 
+                    <Footer></Footer>          
                 </center>
             </BrowserRouter>
         </CartContextProvider>          

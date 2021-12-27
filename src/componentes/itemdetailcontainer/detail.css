@@ -1,0 +1,22 @@
+label{
+    margin-top: 50px;
+    border: none;
+}
+.border-3{
+    border: none;
+}
+
+.border{
+    border: none !important;
+}
+
+p{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.count{
+    font-size: 30px;
+    margin-top: 50px;
+    margin-left: 20px;
+}

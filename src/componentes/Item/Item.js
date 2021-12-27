@@ -1,7 +1,9 @@
 import {Link} from 'react-router-dom'
+import "./item.css"
 
 function Item({prod}) {
     console.log('item')
+
     return (
         <div 
             key={prod.id}
@@ -9,11 +11,14 @@ function Item({prod}) {
         >                        
             <div className="card w-100 mt-5" >
                 <div className="card-header">
-                    {`${prod.title} - ${prod.categoria}`}
+                    {`${prod.title} `}
                 </div>
-                <div className="card-body">
-                    <img src={prod.imagenes} alt='' width="500px" />
-                    {prod.price}                                                            
+                <div className="img-fluid">
+                    <img src={prod.imagenes} alt='' width="300" />
+                                                                             
+                </div>
+                <div>
+                {prod.price} 
                 </div>
                 <div className="card-footer">  
                 <Link to={`/detalle/${prod.id}`}>

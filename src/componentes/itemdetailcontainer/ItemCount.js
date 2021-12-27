@@ -33,19 +33,22 @@ function ItemCount({stock = 1, onAdd}) {
 
     return (
         <div className="h6 qtyBox d-flex align-items-center justify-content-around border w-75">
+           
             <button onClick={restar}>
                 -
             </button>
             <div >
+                <p className="count">
                 {count}
                 {/* {props.count} */}
+                </p>
             </div>       
             <button  onClick={sumar}>
                 +
-            </button><br/>
-
-            
+            </button>
+        <div>
             <button onClick={handleClik}>Agregar Carrito</button>
+            </div>
         </div>
     )
 }

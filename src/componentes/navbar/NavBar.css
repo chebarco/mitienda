@@ -7,5 +7,9 @@
 
 .cart{
     margin-left: 30px;
-    margin-top: 5px;
+    margin-top: 45px;
+}
+
+.carrito-contador{
+font-weight: bold;
 }

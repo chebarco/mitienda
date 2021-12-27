@@ -1,5 +1,5 @@
 import { useCartContext } from "../../context/CartContext"
-
+import "./cart.css"
 
 
 function Cart() {
@@ -8,7 +8,7 @@ function Cart() {
 
     return (
         <div>
-            {  cartList.map(prod=> <li>{prod.name}   {prod.cantidad}</li>) }
+            {  cartList.map(prod=> <li>Cantidad {prod.cantidad} de {prod.title} </li>) }
             <button onClick={borrarCarrito} >Vaciar Carrito</button>
         </div>
     )

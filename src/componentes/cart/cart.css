@@ -1,0 +1,15 @@
+li{
+    text-decoration: none;
+    list-style: none;
+    margin-top: 50px;
+    font-size: 20px;
+}
+button{
+    margin-top: 20px;
+    border: none;
+    background-color: plum;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+}

@@ -3,6 +3,8 @@ import {useState} from 'react'
 import ItemCount from "./ItemCount";
 import { Col, Row } from "react-bootstrap"
 import { useCartContext } from '../../context/CartContext';
+import  "./detail.css"
+
 
 function ItemDetail({prod}) {
     const [count, setCount] = useState(0)
@@ -25,12 +27,10 @@ function ItemDetail({prod}) {
                         <label>{prod.title}</label>
                     </div>
                     <div className="container">
-                        <img  src={prod.imagenes} className="w-25" alt="foto" />
-                        <br/>
-                        <label>{prod.categoria}</label>
+                        <img  src={prod.imagenes}  alt="foto" width="300px" />
                     </div>
                     <div className="container">
-                        <label>{prod.price}</label>
+                        <p>{prod.price}</p>
                     </div>
                 </div>
             </Col>

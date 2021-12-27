@@ -7,9 +7,12 @@ import CartWidget from './CartWidget'
 import Logo from "../imagenes/mitienda.png"
 import  "./NavBar.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useCartContext } from '../../context/CartContext'
 
 
 function NavBar() {
+  const {cartList} = useCartContext()
+
     return (
         <>
         <Navbar className="nav" expand="lg">
@@ -26,10 +29,15 @@ function NavBar() {
 <NavDropdown.Item>   <NavLink className="" activeClassName='' to="/categoria/especiales">Chocolate con Especiales</NavLink>      </NavDropdown.Item>                  
 
             <NavDropdown.Divider />
-            <Link to="/cart" >  <CartWidget /></Link> 
           </NavDropdown>
+          
 
         </Nav>
+        <div className="carrito-contador">
+        {cartList.map(prod=> <li>{prod.cantidad}</li>)}
+       </div>
+        <Link to="/cart" > <CartWidget /> </Link> 
+
       </Navbar.Collapse>
     </Container>
   </Navbar>
